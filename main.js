@@ -11,7 +11,8 @@ function multiplyNumber(num) {
 multiplyNumber(num)
 */
 
- // Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
+
+/* // Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
 
 const string = '!Hi !Hi'
 
@@ -25,5 +26,20 @@ function remove (string) {
  
 
   remove (string)
-  
+  */
 
+
+// Exclamation marks series #6
+
+const s = "!!!Hi !!hi!!! !hi"
+const n = 3
+
+function remove(s,n){
+    while (n > 0) {
+        s = s.replace('!', '');
+        n--;
+      }
+      return console.log(s)
+}
+
+remove(s,n)
