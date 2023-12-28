@@ -11,7 +11,6 @@ function multiplyNumber(num) {
 multiplyNumber(num)
 */
 
-
 /* // Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
 
 const string = '!Hi !Hi'
@@ -28,8 +27,7 @@ function remove (string) {
   remove (string)
   */
 
-
-// Exclamation marks series #6
+ /* // Exclamation marks series #6
 
 const s = "!!!Hi !!hi!!! !hi"
 const n = 3
@@ -43,3 +41,17 @@ function remove(s,n){
 }
 
 remove(s,n)
+*/
+
+
+
+//Do you speak "English"?
+
+const sentence = "eNglisH"
+
+function spEng(sentence){
+    const str = 'english'
+    return console.log(sentence.toLowerCase().includes(str))
+  }
+
+  spEng(sentence)
