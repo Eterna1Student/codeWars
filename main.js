@@ -43,9 +43,7 @@ function remove(s,n){
 remove(s,n)
 */
 
-
-
-//Do you speak "English"?
+/* //Do you speak "English"?
 
 const sentence = "eNglisH"
 
@@ -55,3 +53,74 @@ function spEng(sentence){
   }
 
   spEng(sentence)
+
+  const sentence = "abcEnglishdef"
+
+    function spEng(sentence){
+        const str = 'english'
+        const result = sentence.toLowerCase().search(str) 
+        return console.log(result > -1 ? true : false)
+    }
+
+  spEng(sentence)
+*/
+
+/* // The 'if' function
+
+const bool = true
+function func1() {
+    return console.log("True")
+} 
+function func2() {
+    return console.log("False")
+} 
+
+
+function _if(bool, func1, func2) {
+  // if (bool === true) {
+  //   return func1()
+  // } else {
+  //   return func2()
+  // }
+  return bool ? func1() : func2()
+}
+
+_if(bool, func1, func2)*/
+
+/* //Exclamation marks series #1
+const string = "Hi!!!"
+
+function remove(string) {
+  const arr = string.split('')
+  const newArr = arr[arr.length -1] === '!' ? arr.pop() : string
+  console.log(arr.join(''))
+}
+
+remove(string)*/
+
+ // Define a card suit
+
+const card = 'Q♦'
+
+function defineSuit(card) {
+  switch(card[card.length-1]) {
+    case '♣':  
+      return console.log('clubs')
+      break
+
+    case '♦':  
+      return console.log('diamonds')
+      break
+
+    case '♥':  
+      return console.log('hearts')
+      break
+
+    case '♠':  
+      return console.log('spades')
+      break
+  }
+}
+
+defineSuit(card)
+
