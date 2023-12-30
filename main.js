@@ -98,7 +98,7 @@ function remove(string) {
 
 remove(string)*/
 
- // Define a card suit
+/* // Define a card suit
 
 const card = 'Q♦'
 
@@ -123,4 +123,19 @@ function defineSuit(card) {
 }
 
 defineSuit(card)
+*/
+
+const a = 1
+const b = 10
+
+
+function between(a, b) {
+  let arr = []
+  for (let index = a; index <= b; index++) {
+    arr.push(index)
+  }
+  return arr
+}
+
+between(a, b)
 
