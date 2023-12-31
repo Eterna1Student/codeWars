@@ -125,9 +125,9 @@ function defineSuit(card) {
 defineSuit(card)
 */
 
+/* // What is between?
 const a = 1
 const b = 10
-
 
 function between(a, b) {
   let arr = []
@@ -138,4 +138,25 @@ function between(a, b) {
 }
 
 between(a, b)
+*/
 
+ //Fuel Calculator: Total Cost
+
+ const litres = 5
+ const pricePerLitre = 5.6
+ let result
+ if(litres < 2){
+    result = litres * pricePerLitre
+ } else if (litres >= 2 && litres < 4){
+    result = litres * (pricePerLitre - 0.05)
+ } else if (litres >= 4 && litres < 6){
+    result = litres * (pricePerLitre - 0.10)
+ } else if (litres >= 6 && litres < 8){
+    result = litres * (pricePerLitre - 0.15)
+ } else if (litres >= 8 && litres < 10){
+    result = litres * (pricePerLitre - 0.20)
+ } else if (litres >= 10){
+    result = litres * (pricePerLitre - 0.25)
+ }
+
+ console.log(Number(result.toFixed(2)))
