@@ -140,7 +140,7 @@ function between(a, b) {
 between(a, b)
 */
 
- //Fuel Calculator: Total Cost
+/* //Fuel Calculator: Total Cost
 
  const litres = 5
  const pricePerLitre = 5.6
@@ -159,4 +159,33 @@ between(a, b)
     result = litres * (pricePerLitre - 0.25)
  }
 
- console.log(Number(result.toFixed(2)))
+ console.log(Number(result.toFixed(2)))*/
+
+  // How old will I be in 2099?
+
+  // const currentDate = new Date().getFullYear()
+  // const birthday = currentDate - 4
+
+
+function calculateAge(a, b) {
+      let age 
+      if (a < b) {
+        age = b - a
+        if (age === 1) {
+          console.log(`You are ${age} year old.`)
+        } else {
+          console.log(`You are ${age} years old.`)
+        }
+      } else if (a > b) {
+        age = a - b
+        if (age === 1) {
+          console.log(`You will be born in ${age} year.`)
+        } else {
+          console.log(`You will be born in ${age} years.`) 
+        }
+      } else if (a === b) {
+        console.log("You were born this very year!") 
+      }
+  }
+
+  calculateAge(2024, 2024) 
