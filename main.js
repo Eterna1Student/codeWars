@@ -190,7 +190,7 @@ function calculateAge(a, b) {
 
   calculateAge(2024, 2024) */
 
- // How many stairs will Suzuki climb in 20 years?
+/* // How many stairs will Suzuki climb in 20 years?
 
 const s = [
   [
@@ -272,4 +272,16 @@ const s = [
   })
   console.log(newArr.reduce((acc, el)=> acc + el, 0))
 }
-stairsIn20(s)
+stairsIn20(s)*/
+
+ // Double Char
+  const str = 'Abcd'
+ function doubleChar(str) {
+  const arr = str.split('')
+  const newArr = arr.reduce(function (res, current, index, array) {
+        return res.concat([current, current])
+    }, []);
+    return console.log(newArr.join(''))
+}
+
+doubleChar(str)
