@@ -274,7 +274,7 @@ const s = [
 }
 stairsIn20(s)*/
 
- // Double Char
+/* // Double Char
   const str = 'Abcd'
  function doubleChar(str) {
   const arr = str.split('')
@@ -284,4 +284,13 @@ stairsIn20(s)*/
     return console.log(newArr.join(''))
 }
 
-doubleChar(str)
+doubleChar(str)*/
+
+ //Returning Strings
+
+ function greet(name){
+
+  console.log(`Hello, ${name} how are you doing today?`)
+}
+
+greet('Oleg')
