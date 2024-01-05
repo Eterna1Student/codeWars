@@ -286,11 +286,24 @@ stairsIn20(s)*/
 
 doubleChar(str)*/
 
- //Returning Strings
+/* //Returning Strings
 
  function greet(name){
 
   console.log(`Hello, ${name} how are you doing today?`)
 }
 
-greet('Oleg')
+greet('Oleg')*/
+
+ // If you can't beat 'em, join 'em!
+
+function cantBeatSoJoin(arr) {
+  // Сначала отсортируем внутренние массивы по убыванию суммы их элементов
+  arr.sort((a, b) => b.reduce((acc, cur) => acc + cur, 0) - a.reduce((acc, cur) => acc + cur, 0));
+  // Затем объединим отсортированные массивы в один
+  let result = arr.flat();
+  return result;
+}
+
+console.log(cantBeatSoJoin([[1,2], [3,4], [5,6], [7,8], [9]]))
+
