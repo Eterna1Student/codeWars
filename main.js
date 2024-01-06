@@ -295,11 +295,11 @@ doubleChar(str)*/
 
 greet('Oleg')*/
 
- // If you can't beat 'em, join 'em!
+/* // If you can't beat 'em, join 'em!
 
 function cantBeatSoJoin(arr) {
   // Сначала отсортируем внутренние массивы по убыванию суммы их элементов
-  arr.sort((a, b) => b.reduce((acc, cur) => acc + cur, 0) - a.reduce((acc, cur) => acc + cur, 0));
+  arr.sort((a, b) => b.reduce((acc, cur) => acc + cur, 0) - a.reduce((acc, cur) => acc + cur, 0))
   // Затем объединим отсортированные массивы в один
   let result = arr.flat();
   return result;
@@ -307,3 +307,20 @@ function cantBeatSoJoin(arr) {
 
 console.log(cantBeatSoJoin([[1,2], [3,4], [5,6], [7,8], [9]]))
 
+arr.sort((a, b) => {
+  let sum1 = b.reduce((acc, cur) => acc + cur, 0)
+  let sum2 = a.reduce((acc, cur) => acc + cur, 0)
+  return b-a
+})*/
+
+ // Isograms 
+
+const str = 'Dermatoglyphicsss'
+
+function isIsogram(str){
+  const arr = str.toLowerCase().split('')
+  const newArr = arr.filter((value, index) => arr.indexOf(value) === index)
+  console.log(arr.join('') == newArr.join(''))
+}
+
+isIsogram(str)
