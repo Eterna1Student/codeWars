@@ -313,7 +313,7 @@ arr.sort((a, b) => {
   return b-a
 })*/
 
- // Isograms 
+/* // Isograms 
 
 const str = 'Dermatoglyphicsss'
 
@@ -323,4 +323,16 @@ function isIsogram(str){
   console.log(arr.join('') == newArr.join(''))
 }
 
-isIsogram(str)
+isIsogram(str)*/
+
+  // Get the mean of an array
+
+const marks = [1, 2, 3, 4, 15]
+
+function getAverage(marks){
+  let sumMarks = marks.reduce((acc, el) => acc + el, 0 )
+  let averageScore = Math.floor(sumMarks/marks.length)
+  console.log(averageScore);
+}
+
+getAverage(marks)
