@@ -327,12 +327,34 @@ isIsogram(str)*/
 
   // Get the mean of an array
 
-const marks = [1, 2, 3, 4, 15]
+// const marks = [1, 2, 3, 4, 15]
 
-function getAverage(marks){
-  let sumMarks = marks.reduce((acc, el) => acc + el, 0 )
-  let averageScore = Math.floor(sumMarks/marks.length)
-  console.log(averageScore);
+// function getAverage(marks){
+//   let sumMarks = marks.reduce((acc, el) => acc + el, 0 )
+//   let averageScore = Math.floor(sumMarks/marks.length)
+//   console.log(averageScore);
+// }
+
+// getAverage(marks)
+
+
+/*
+// Parts of a list
+
+const arr = ["az", "toto", "picaro", "zone", "kiwi"]
+
+function partlist(arr) {
+  const newArr = []
+  arr.map((e, index) => {
+    if (index !== arr.length - 1){
+      newArr.push([arr.slice(0, index + 1).join(' '), arr.slice(index + 1).join(' ')])
+    }
+  })
+  return console.log( newArr );
 }
 
-getAverage(marks)
+partlist(arr) 
+
+*/
+
+
